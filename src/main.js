@@ -1,9 +1,9 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
 import DefaultLayout from '~/layouts/Default.vue'
+require('~/assets/sass/main.scss')
+require('typeface-source-sans-pro')
 
-export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
+export default function (Vue, { head }) {
   Vue.component('Layout', DefaultLayout)
+
+  head.bodyAttrs = { class: 'is-preload' }
 }
