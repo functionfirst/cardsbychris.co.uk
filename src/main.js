@@ -1,9 +1,9 @@
-import DefaultLayout from '~/layouts/Default.vue'
-require('~/assets/sass/main.scss')
-require('typeface-source-sans-pro')
+import DefaultLayout from '~/layouts/Default.vue';
+require('~/assets/css/style.sass');
+require('typeface-source-sans-pro');
 
-export default function (Vue, { head }) {
-  Vue.component('Layout', DefaultLayout)
+export default function(Vue, { head }) {
+  Vue.component('Layout', DefaultLayout);
 
-  head.bodyAttrs = { class: 'is-preload' }
+  head.bodyAttrs = { class: 'font-sans' };
 }
