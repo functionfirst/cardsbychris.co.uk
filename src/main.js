@@ -5,5 +5,5 @@ require('typeface-source-sans-pro');
 export default function(Vue, { head }) {
   Vue.component('Layout', DefaultLayout);
 
-  head.bodyAttrs = { class: 'font-sans' };
+  head.bodyAttrs = { class: 'font-sans bg-gray-900' };
 }
